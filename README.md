@@ -61,3 +61,15 @@ python main.py --seed 1027 --dataset=CoauthorCS --node_budget=1 --edge_budget=1 
 ```shell
 python main.py --seed 1027 --dataset=co_computer --node_budget=2 --edge_budget=1 --feature_budget=1 --victim_num_layers=2 --victim_model=gcn --hid_dim=256 --lr=0.001 --attacker=GZOO --gzoo_khop_edge=2 --gzoo_kappa=-0.001  --gzoo_run_mode=black-box --gzoo_attack_epochs=5 --gzoo_sigma=1e-3 --gzoo_patience=4 --gzoo_gen_feat_dim=64 --gzoo_gen_hid_dim=128 --gzoo_gen_lr=1e-3 --gzoo_batch_size=64 --instance=GZOO-co_computer-GCN-Node-2-1027 --wandb_group=Generalization
 ```
+
+### Citation
+
+```biblatex
+@article{yu2024zoo,
+  title={GZOO: Black-box Node Injection Attack on Graph Neural Networks via Zeroth-order Optimization},
+  author={Yu, Hao and Liang, Ke and Hu, Dayu and Tu, Wenxuan and Ma, Chuan and Zhou, Sihang and Liu, Xinwang},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2024},
+  publisher={IEEE}
+}
+```
