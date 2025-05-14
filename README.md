@@ -37,7 +37,6 @@ Note that, after configuring it, please update ```project name``` in the line 13
 python main.py --seed 1027 --dataset=cora --node_budget=1 --edge_budget=1 --feature_budget=1 --victim_num_layers=2 --victim_model=sgc --hid_dim=256 --lr=0.001 --attacker=GZOO --gzoo_khop_edge=2 --gzoo_kappa=-0.001 --gzoo_run_mode=black-box --gzoo_attack_epochs=5 --gzoo_sigma=1e-3 --gzoo_patience=4 --gzoo_gen_feat_dim=64 --gzoo_gen_hid_dim=128 --gzoo_gen_lr=1e-3 --gzoo_batch_size=64 --instance=GZOO-cora-SGC-1027 --wandb_group=Effectiveness
 ```
 
-More examples please refer to ```effectiveness.sh```
 
 ### Robustness
 
